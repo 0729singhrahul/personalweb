@@ -468,6 +468,7 @@ button:focus {
 	float: left;
 	margin-top: 20px;
 	width: 100%;
+	color: #020202
 }
 
 .mu-skill-progress-bar {
@@ -497,7 +498,7 @@ button:focus {
 .mu-pro-percentage {
 	display: inline-block;
 	padding: 5px 0;
-	color: #fff;
+	color: rgb(31, 29, 29);
 }
 
 .mu-pro-bar .progressbar {
@@ -513,7 +514,7 @@ button:focus {
 	position: absolute;
 	top: 0;
 	left: 48%;
-	color: #fff;
+	color: rgb(24, 23, 23);
 }
 
 .mu-social-media{
@@ -542,6 +543,7 @@ button:focus {
 }
 
 .mu-resume-btn {
+	color: rgb(86, 111, 194);
 	margin-top: 30px;
 	display: inline-block;
 	padding: 10px 15px;
@@ -562,7 +564,12 @@ button:focus {
 /* SERVICE */
 /*--------------------*/
 
-
+	/*line;
+	float: left;
+	text-align: center;
+	padding: 0 120px;
+	width: 100%;*/
+	
 #mu-service {
 	display: inline;
 	float: left;
@@ -578,16 +585,12 @@ button:focus {
 }
 
 .mu-service-header {
-	display: inline;
-	float: left;
-	text-align: center;
-	padding: 0 120px;
-	width: 100%;
-	
+	display: in
+	\
 }
 
 .mu-heading-title {
-	color: rgb(225, 227, 233);
+	color: #272729;
 	margin-bottom: 15px;
 	position: relative;
 }
@@ -628,7 +631,75 @@ button:focus {
 .mu-service-content-single p {
 	font-size: 14px;
 	margin-bottom: 0;
-	color: rgb(86, 111, 194);
+	color: #ffffff;
+	letter-spacing: 0.5px;
+}
+
+/*--------------------*/
+/* SERVICE 2.0 */
+/*--------------------*/
+
+#mu-service1 {
+	display: inline;
+	float: left;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.mu-service1-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-service1-header {
+	display: in
+}
+
+.mu-heading-title {
+	color: rgb(225, 227, 233);
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.mu-service1-content{
+	display: inline;
+	float: left;
+	margin-top: 70px;
+	width: 100%;
+}
+
+.mu-service1-content-single {
+	background-color: #272729;
+	display: inline;
+	float: left;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 25px 10px;
+	width: 100%;
+}
+
+.mu-service1-icon-box {
+	font-size: 30px;
+	margin-bottom: 20px;
+	display: inline-block;
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	line-height: 75px;
+}
+
+.mu-service1-content-single h4{
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.mu-service1-content-single p {
+	font-size: 14px;
+	margin-bottom: 0;
+	color: #ffffff;
 	letter-spacing: 0.5px;
 }
 
