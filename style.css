@@ -340,7 +340,8 @@ button:focus {
 /*--------------------*/
 
 #mu-featured-slider {
-	background-image: url("mountain2.jpg");
+	/*background-image: url("mountain2.jpg");*/
+	background-color: lightcoral;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center center;
@@ -349,6 +350,55 @@ button:focus {
 	width: 100%;
 }
 
+#gear1, #gear2, #gear3 {
+    color: #888;
+    display: block;
+    float: left;
+    position: absolute;
+}
+            
+#gear1 {
+	top: 410px;
+	left: 1;
+}
+            
+#gear2 {
+    left: 40px;
+}
+
+#gear3 {
+    top: 410px;
+    left: -10px;
+}
+
+.spin {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+.spin-back {
+    -webkit-animation:spin-back 4s linear infinite;
+    -moz-animation:spin-back 4s linear infinite;
+    animation:spin-back 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@-moz-keyframes spin-back { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin-back { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin-back { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+.myimg{
+	align-content: center;
+	left: 100px;
+	width:250px;
+	height:250px;
+	object-fit: cover;
+	border-radius:80%;
+  }
 
 .mu-featured-area {
 	display: inline;
@@ -416,10 +466,12 @@ button:focus {
 
 
 #mu-about {
-	background-color: #f2f2f2;
+	background-image: url(mountain.jpg) ;
+	/*background-color: rgba(0, 0, 0, 0.6);*/
 	display: inline;
 	float: left;
 	width: 100%;
+	background: transparent;
 }
 
 .mu-about-area {
@@ -439,6 +491,7 @@ button:focus {
 }
 
 .mu-heading-title {
+	text-align: center;
 	color: #020202;
 	margin-bottom: 15px;
 	position: relative;
@@ -446,10 +499,13 @@ button:focus {
 
 .mu-heading-paragraph{
 	color: #020202;
+	
 }
 
 .mu-about-content {
-	background-color: #fff;
+	/*background-color: #fff;*/
+	background-image: url(mountain.jpg) ;
+	background-color: transparent;
 	display: inline;
 	float: left;
 	margin-top: 70px;
@@ -458,10 +514,13 @@ button:focus {
 }
 
 .mu-about-content-left {
+	
 	display: inline;
 	float: left;
 	width: 100%;
 }
+
+
 
 .mu-about-content-right {
 	display: inline;
@@ -560,6 +619,15 @@ button:focus {
 }
 
 
+#workexp {
+	background-color: grey ;
+	/*background-color: rgba(0, 0, 0, 0.6);*/
+	display: inline;
+	float: left;
+	width: 100%;
+	background: transparent;
+}
+
 /*--------------------*/
 /* SERVICE */
 /*--------------------*/
@@ -604,7 +672,7 @@ button:focus {
 
 .mu-service-content-single {
 	background-color: #272729;
-	display: inline;
+	display: inline-block;
 	float: left;
 	text-align: center;
 	margin-top: 15px;
@@ -635,8 +703,82 @@ button:focus {
 	letter-spacing: 0.5px;
 }
 
+.blockk{
+	display: inline-block;
+}
+
+
 /*--------------------*/
 /* SERVICE 2.0 */
+/*--------------------*/
+
+#mu-service2 {
+	display: inline;
+	float: left;
+	width: 100%;
+	background-color: #185383;
+}
+
+.mu-service2-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-service2-header {
+	display: in
+}
+
+.mu-heading-title {
+	color: rgb(225, 227, 233);
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.mu-service2-content{
+	display: inline;
+	float: left;
+	margin-top: 70px;
+	width: 100%;
+}
+
+.mu-service2-content-single {
+	background-color: #272729;
+	display: inline;
+	float: left;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 25px 10px;
+	width: 100%;
+}
+
+.mu-service2-icon-box {
+	font-size: 30px;
+	margin-bottom: 20px;
+	display: inline-block;
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	line-height: 75px;
+}
+
+.mu-service2-content-single h4{
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.mu-service2-content-single p {
+	font-size: 14px;
+	margin-bottom: 0;
+	color: #ffffff;
+	letter-spacing: 0.5px;
+}
+
+
+/*--------------------*/
+/* SERVICE 1.0 */
 /*--------------------*/
 
 #mu-service1 {
@@ -862,7 +1004,7 @@ button:focus {
 /*--------------------*/
 
 #mu-testimonials {
-	background-image: url("assets/images/testimonials-bg.jpeg");
+	/*background-image: url("assets/images/testimonials-bg.jpeg");*/
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -979,6 +1121,9 @@ button:focus {
 	display: none;
 }
 
+.row1{
+	display: inline-block;
+}
 
 /*--------------------*/
 /* CONTACT US */
